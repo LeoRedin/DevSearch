@@ -1,0 +1,14 @@
+{
+  "name": "DevSearch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:backend": "cd backend && yarn start",
+    "start:client": "cd client && yarn start",
+    "start": "concurrently  \"yarn start:backend\" \"yarn start:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
